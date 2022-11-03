@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Kanban Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Simple Kanban Board</h1>
+    <div class="boards">
+      <div class="board">
+        <h3>TO DO</h3>
+        <div class="dropzone">
+          <div class="card" draggable="true">
+            <div class="status green"></div>
+            <div class="content">To do</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <h3>IN PROGRESS</h3>
+        <div class="dropzone">
+          <div class="card" draggable="true">
+            <div class="status blue"></div>
+            <div class="content">In progress</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <h3>DONE</h3>
+        <div class="dropzone">
+          <div class="card" draggable="true">
+            <div class="status red"></div>
+            <div class="content">Done done done</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
